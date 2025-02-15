@@ -1,0 +1,132 @@
+#comp{
+  background-color: blue;
+}
+
+.comp{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 1280px;
+  height: 720px;
+  background-color: black;
+}
+
+/* .comp{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+} */
+
+.box{
+  /* width:1280px; */
+  /* height: 720px; */
+  /* padding-bottom: 56.25%; */
+  /* border: 10px solid white; */
+}
+
+.comp_layer_1{
+  background-image: url(../img/comp_img_layers/gijoe_2035/1_helicoptor.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comp_layer_2{
+  background-image: url(../img/comp_img_layers/gijoe_2035/2_fx.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comp_layer_3{
+  background-image: url(../img/comp_img_layers/gijoe_2035/3_clean.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comp_layer_4{
+  background-image: url(../img/comp_img_layers/gijoe_2035/4_plate.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comp_frontal{
+  -webkit-transform: translateZ(150px) translateX(2px) scale(.5);
+  transform: translateZ(150px) translateX(2px) scale(.5);
+  z-index: 7;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.comp_fg{
+  -webkit-transform: translateZ(100px) translateX(2px) scale(.666);
+  transform: translateZ(100px) translateX(2px) scale(.666);
+  z-index: 6;
+  /* background-color: rgba(255, 255, 255, 1); */
+}
+
+.comp_base{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 5;
+  /* background-color: rgba(255, 255, 255, .8); */
+}
+
+.comp_base_fg{
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 100;
+}
+
+.comp_bg{
+  -webkit-transform: translateZ(-100px) translateX(-3px) scale(1.335);
+  transform: translateZ(-100px) translateX(-3px) scale(1.335);
+  z-index: 4;
+  /* background-color: rgba(255, 255, 255, .6); */
+}
+
+.comp_deep{
+  -webkit-transform: translateZ(-200px) translateX(-5px) scale(1.67);
+  transform: translateZ(-200px) translateX(-5px) scale(1.67);
+  z-index: 3;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.comp_deeper{
+  -webkit-transform: translateZ(-300px) translateX(-7px) scale(2.01);
+  transform: translateZ(-300px) translateX(-7px) scale(2.01);
+  z-index: 2;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.comp_deepest{
+  -webkit-transform: translateZ(-500px) translateX(-10px) scale(2.69);
+  transform: translateZ(-500px) translateX(-10px) scale(2.69);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Debugger styles - used to show the effect
+--------------------------------------------- */
+
+.debug {
+  position: fixed;
+  top: 0;
+  left: .5em;
+  z-index: 999;
+  /* background: rgba(0,0,0,.85); */
+  /* color: #fff; */
+  padding: .5em;
+  /* border-radius: 0 0 5px 5px; */
+}
+.debug-on .parallax_page {
+  -webkit-transform: translate3d(800px, 0, -800px) rotateY(15deg);
+  transform: translate3d(700px, 0, -800px) rotateY(15deg);
+  /* -webkit-transform: translate3d(0px, 0, 0px) rotateY(0deg);
+  transform: translate3d(0px, 0, 0px) rotateY(0deg); */
+}
+
+.debug-on .layer {
+  /* box-shadow: 0 0 0 2px #000; */
+  opacity: 0.9;
+}

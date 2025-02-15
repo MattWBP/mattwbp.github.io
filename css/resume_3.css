@@ -1,0 +1,197 @@
+#resume{
+  background-image: repeating-linear-gradient(
+ -45deg,
+ rgb(10, 10, 10) 0px,
+ rgb(10, 10, 10) 10px,
+ rgb(0, 0, 0) 10px,
+ rgb(0, 0, 0) 20px
+ );
+ /* padding:10px; */
+ color: white;
+ text-align: center;
+}
+
+
+.projects_by_year{
+  display: grid;
+  grid-auto-rows: auto;
+  text-align: center;
+  /* grid-gap: 10px; */
+  /* max-width: 1000px;
+  min-width: 800px;
+  width:800px */
+  /* width: min-content; */
+}
+.resume_title{
+  text-align: left;
+  height:auto;
+  /* background-color: white; */
+  padding:10px;
+}
+
+.resume_about{
+  padding:10px;
+}
+
+.year{
+  display: grid;
+  grid-template-rows: auto;
+  /* grid-gap: 10px; */
+}
+.year_line{
+  display: none;
+  grid-template-rows: auto 1px auto;
+  grid-template-columns: 105px 10px auto 100px;
+  grid-template-areas:
+          ". connector_top . title2"
+          "line line line title2"
+          ". connector_bottom . title2"
+}
+
+.year_title{
+  grid-area: title2;
+  text-align: left;
+  padding-left: 10px;
+}
+.year_divider{
+  background-color: white;
+  grid-area: line;
+}
+.year_connector_top{
+  grid-area: connector_top;
+  /* background-color: white; */
+}
+.year_connector_bottom{
+  grid-area: connector_bottom;
+  /* background-color: white; */
+}
+.company{
+  /* display: grid; */
+  grid-gap: 10px;
+  grid-template-columns: 50px 100px auto 100px;
+}
+.spacer{
+  width: 0px;
+}
+
+.company_logo{
+  /* width:100px; */
+  height:100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.linker{
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .year_line{
+    display: grid;
+  }
+
+  .projects_by_year{
+    grid-gap:0px;
+    max-width:800px;
+    min-width:800px;
+  }
+  .company{
+    display: grid;
+    grid-template-columns: 50px 100px auto 100px;
+  }
+
+  .spacer{
+    display: block;
+    width:50px;
+  }
+  .projects{
+    display: grid;
+  }
+
+  .year_connector_top{
+    background-color: white;
+  }
+
+  .year_connector_bottom{
+    background-color: white;
+  }
+
+  .linker{
+    display:block;
+  }
+}
+
+
+
+.projects{
+    /* display: grid; */
+    grid-template-columns: repeat(4, auto);
+  }
+.project{
+  grid-column: span 1;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#framestore{
+    background-color: white;
+}
+
+#milkvfx{
+  background-color: white;
+}
+
+#jellyfishpictures{
+  background-color: #0089FF;
+}
+
+#primefocus{
+  background-color: black;
+}
+
+#blinktv{
+  background-color: black;
+}
+
+#vine{
+  background-color: black;
+}
+
+#squintopera{
+  background-color: black;
+}
+
+#digitaldomain{
+  background-color: black;
+}
+
+#cinesite{
+  background-color: #677073;
+}
+
+#bluebolt{
+  background-color: #03293D;
+}
+
+#nvizible{
+  background-color: orange;
+}
+
+#sprout{
+  background-color: green;
+}
+
+#topgear{
+  background-color: black;
+}
+
+#lipsync{
+  background-color: grey;
+}
+
+#spov{
+  background-color: black;
+}
