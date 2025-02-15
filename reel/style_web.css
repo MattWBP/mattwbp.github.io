@@ -1,0 +1,112 @@
+body{
+    background-color: black;
+    color:white;
+    background-image: repeating-linear-gradient(
+     -45deg,
+     rgb(10, 10, 10) 0px,
+     rgb(10, 10, 10) 10px,
+     rgb(0, 0, 0) 10px,
+     rgb(0, 0, 0) 20px
+     );
+}
+
+hr{
+    margin: 20px 300px 20px 300px;
+}
+
+#reel{
+    width: 1280px;
+    height:720px;
+    border:1px solid white;
+    background-color: black;
+}
+
+.breakdowns{
+/*    width:1000px;*/
+}
+
+.shot{
+    background-color: black;
+    margin-top:20px;
+    width:800px;
+    display:grid;
+/*
+    grid-template-columns: 360px 1fr;
+    grid-template-areas: 
+        "shot_image shot_info";
+*/
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'shot_image'
+        'shot_info';
+    text-align: left;
+}
+
+.shot_image{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-area: shot_image;
+    min-height: 200px;
+}
+
+.shot_info{
+    grid-area: shot_info;
+    padding:10px;
+    display: grid;
+/*    grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1ft 1fr 1fr;
+    grid-gap:10px;
+/*
+    grid-template-areas: 
+        "shot_title shot_title shot_title"
+        "shot_subheading shot_subheading shot_subheading"
+        "shot_role shot_studio shot_studio"
+        "shot_supplied shot_supplied shot_supplied"
+        "shot_description shot_description shot_description"
+*/
+        grid-template-areas: 
+        "shot_title shot_title shot_studio_role"
+        "shot_title shot_title shot_studio_role"
+/*        "shot_role shot_studio shot_studio"*/
+        "shot_supplied shot_supplied shot_supplied"
+        "shot_description shot_description shot_description"
+        
+}
+
+.shot_title{
+    grid-area: shot_title;
+    font-weight: bold;
+    font-size:24pt;
+}
+
+.sub{
+    font-weight:normal;
+    font-size: 16pt;
+}
+.shot_subheading{
+    grid-area: shot_subheading;
+}
+
+.shot_role{
+    grid-area:shot_role;
+}
+
+.shot_studio_role{
+    text-align: right;
+    grid-area:shot_studio_role;
+}
+
+/*
+.shot_date{
+    grid-area:shot_date;
+}
+*/
+
+.shot_supplied{
+    grid-area:shot_supplied;
+}
+
+.shot_description{
+    grid-area:shot_description
+}
