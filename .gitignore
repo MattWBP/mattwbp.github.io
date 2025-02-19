@@ -1,2 +1,10 @@
 old/
 img/raw/
+raw/
+
+*.php
+*.afphoto
+*.afdesign
+*.afpub
+
+
