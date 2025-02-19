@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>MattWBP : VFX Compositing & Pipeline</title>
-    <meta name="description" content="Visual Effects and Pipeline resume website for Matt W.B. Plummer.">
+    <meta name="description" content="Visual Effects and Pipeline resume website for Matt W.B. Plummer (Matt Plummer).">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
